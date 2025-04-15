@@ -1,0 +1,20 @@
+version: 2
+
+seeds:
+  - name: nps_data
+    description: "Synthetic NPS survey data loaded from CSV"
+    config:
+      column_types:
+        customer_id: integer
+        nps_score: integer
+        nps_comment: string
+        posted_at: date
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+      - name: nps_score
+        description: "NPS score from 0 to 10"
+      - name: nps_comment
+        description: "Customer's feedback text"
+      - name: posted_at
+        description: "Date the feedback was submitted"
